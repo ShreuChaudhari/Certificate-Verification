@@ -62,6 +62,8 @@ The following technologies were used to build this project.
 ---
 
 ## **Project Structure**
+
+```
 Certificate-Verification
 │
 ├── add.php
@@ -74,6 +76,7 @@ Certificate-Verification
 ├── details.sql
 ├── users.sql
 └── README.md
+```
 
 
 ---
