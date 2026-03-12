@@ -1,49 +1,45 @@
-Certificate Verification System
-Overview
+***Certificate Verification System***
+**Overview**
 
-The Certificate Verification System is a web-based application designed to verify the authenticity of issued certificates. The system allows users to search and validate certificates using a unique certificate ID stored in a database. It helps organizations prevent certificate fraud and enables quick verification of issued credentials.
+The Certificate Verification System is a web-based application that allows users to verify the authenticity of issued certificates. The system enables verification using a unique certificate ID, which is matched with records stored in a database.
 
-This project demonstrates how certificate information can be securely stored and verified through a simple web interface.
+This project helps organizations ensure that certificates issued by them are genuine and can be easily verified online. It reduces the risk of certificate forgery and simplifies the validation process.
 
-Features
+**Features**
+1)User Authentication
+Secure login system for authorized users.
 
-User authentication system
+2)Certificate Verification
+Users can verify certificates using a unique certificate ID.
 
-Certificate verification using a unique certificate ID
+3)Database Integration
+Certificate information is securely stored in a database.
 
-Secure database storage of certificate details
+4)Simple Interface
+Clean and easy-to-use web interface.
 
-Simple and user-friendly interface
+5)Admin Certificate Management
+Admin can add and manage certificate records.
 
-Admin functionality to add certificate data
+6)Quick Verification
+Instant validation of certificate authenticity.
 
-Fast certificate validation
+**Technology Stack**
+*Frontend*
+1)HTML
+2)CSS
+3)JavaScript
 
-Tech Stack
+*Backend*
+1)PHP
+2)Database
+3)MySQL
 
-Frontend
+*Tools Used*
+1)XAMPP
+2)phpMyAdmin
 
-HTML
-
-CSS
-
-JavaScript
-
-Backend
-
-PHP
-
-Database
-
-MySQL
-
-Tools
-
-phpMyAdmin
-
-XAMPP / Localhost server
-
-Project Structure
+**Project Structure**
 Certificate-Verification
 │
 ├── add.php
@@ -56,78 +52,64 @@ Certificate-Verification
 ├── details.sql
 ├── users.sql
 └── README.md
-Installation
 
-Clone the repository
-
+**Installation Guide**
+*1. Clone the Repository*
 git clone https://github.com/ShreuChaudhari/Certificate-Verification.git
 
-Move the project folder to your server directory
-
+*3. Move the Project Folder*
+Move the cloned folder to your local server directory.
 Example for XAMPP:
-
 xampp/htdocs/
 
-Import the database
-
-Open phpMyAdmin
-
-Create a new database
-
-Import the SQL files:
-
+*3. Import the Database*
+Open phpMyAdmin.
+Create a new database.
+Import the following SQL files:
 details.sql
-
 users.sql
 
-Configure the database connection
-
-Edit config.php and update the database credentials:
+4. Configure Database Connection
+Open the config.php file and update the database credentials if necessary.
 
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "your_database_name";
 
-Start Apache and MySQL in XAMPP.
+5. Start Local Server
+Start the following services in XAMPP:
+Apache
+MySQL
 
-Open the project in your browser:
-
+6. Run the Project
+Open your browser and go to:
 http://localhost/Certificate-Verification
-Usage
 
-Login using the authentication system.
+*How the System Works:*
 
-Enter the certificate ID in the verification field.
+1)The user logs into the system using authentication credentials.
+2)The user enters a certificate ID in the verification form.
+3)The system queries the database for the certificate record.
+4)If the certificate exists, its details are displayed.
+5)If the certificate does not exist, the system shows an invalid certificate message.
 
-The system searches the database for the certificate.
+**Use Cases**
 
-If the certificate exists, its details are displayed.
+Academic Certificate Verification
+Internship Certificate Validation
+Training Program Certificates
+Organizational Credential Authentication
+Preventing Fake Certificates
 
-If the certificate is not found, it will show an invalid result.
+**Future Enhancements**
 
-Use Cases
-
-Academic certificate verification
-
-Training or internship certificate validation
-
-Organization-issued certificate authentication
-
-Preventing fake certificate submissions
-
-Future Improvements
-
-QR code-based verification
-
-Digital certificate generation
-
-Role-based admin dashboard
-
+Possible improvements for the project include:
+QR Code-based certificate verification
+Automated certificate generation
+Admin dashboard with analytics
 API integration for external verification
-
 Blockchain-based certificate storage
 
-License
-
-This project is for educational and demonstration purposes.
+**License**
+This project is created for educational and demonstration purposes.
