@@ -1,4 +1,5 @@
-***Certificate Verification System***
+*Certificate Verification System*
+
 **Overview**
 
 The Certificate Verification System is a web-based application that allows users to verify the authenticity of issued certificates. The system enables verification using a unique certificate ID, which is matched with records stored in a database.
@@ -25,17 +26,18 @@ Admin can add and manage certificate records.
 Instant validation of certificate authenticity.
 
 **Technology Stack**
-*Frontend*
+
+***Frontend***
 1)HTML
 2)CSS
 3)JavaScript
 
-*Backend*
+***Backend***
 1)PHP
 2)Database
 3)MySQL
 
-*Tools Used*
+***Tools Used***
 1)XAMPP
 2)phpMyAdmin
 
@@ -54,6 +56,7 @@ Certificate-Verification
 └── README.md
 
 **Installation Guide**
+
 *1. Clone the Repository*
 git clone https://github.com/ShreuChaudhari/Certificate-Verification.git
 
